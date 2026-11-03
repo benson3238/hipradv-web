@@ -15,18 +15,29 @@
       <a href="index.html" class="text-2xl md:text-3xl font-bold text-slate-900 tracking-wider">
         上元先進 <span class="text-base font-normal text-blue-700">精密加工事業</span>
       </a>
-      <nav class="hidden md:flex space-x-8 font-medium text-slate-700 text-lg">
-        <a href="#about" class="hover:text-blue-700">關於我們</a>
-        <a href="#equipment" class="hover:text-blue-700">設備與檢測</a>
-        <a href="#capability" class="hover:text-blue-700">製程與品管</a>
-        <a href="#products" class="hover:text-blue-700">產品應用</a>
-        <a href="#contact" class="hover:text-blue-700">聯絡我們</a>
-      </nav>
+      
+      <div class="flex items-center space-x-4 md:space-x-8">
+        <nav class="hidden md:flex space-x-8 font-medium text-slate-700 text-lg">
+          <a href="#about" class="hover:text-blue-700 transition">關於我們</a>
+          <a href="#equipment" class="hover:text-blue-700 transition">設備與檢測</a>
+          <a href="#capability" class="hover:text-blue-700 transition">製程與品管</a>
+          <a href="#products" class="hover:text-blue-700 transition">產品應用</a>
+          <a href="#contact" class="hover:text-blue-700 transition">聯絡我們</a>
+        </nav>
+        <!-- 語言切換選單 -->
+        <div class="flex items-center space-x-2 text-xs md:text-sm font-medium bg-slate-100 px-3 py-1.5 rounded-full border border-slate-200">
+          <a href="index.html" class="text-blue-700 font-bold">繁</a>
+          <span class="text-slate-300">|</span>
+          <a href="en/index.html" class="text-slate-500 hover:text-blue-700 transition">EN</a>
+          <span class="text-slate-300">|</span>
+          <a href="jp/index.html" class="text-slate-500 hover:text-blue-700 transition">日</a>
+        </div>
+      </div>
     </div>
   </header>
 
-<!-- 主視覺 Banner (使用現代化 CNC 廠房大圖) -->
-<section class="relative bg-slate-900 text-white py-36 px-6 overflow-hidden">
+  <!-- 主視覺 Banner -->
+  <section class="relative bg-slate-900 text-white py-36 px-6 overflow-hidden">
     <div class="absolute inset-0 opacity-40 bg-cover bg-center" style="background-image: url('images/banner.jpg');"></div>
     <div class="relative max-w-5xl mx-auto text-center z-10">
       <span class="bg-blue-600 text-sm font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-6 inline-block">ISO 導向・專業代工</span>
@@ -40,7 +51,7 @@
     </div>
   </section>
 
-  <!-- 關於我們 / 公司簡介 -->
+  <!-- 關於我們 -->
   <section id="about" class="py-24 max-w-6xl mx-auto px-6">
     <div class="grid md:grid-cols-2 gap-12 items-center">
       <div>
@@ -65,41 +76,31 @@
     </div>
   </section>
 
-  <!-- 製程與檢測優勢 -->
+  <!-- 設備與檢測 -->
   <section id="equipment" class="py-24 bg-slate-100 px-6">
     <div class="max-w-6xl mx-auto">
       <h2 class="text-3xl md:text-4xl font-bold text-slate-950 text-center mb-4">先進設備與檢測能力</h2>
       <p class="text-slate-600 text-lg text-center mb-16 max-w-2xl mx-auto">配置先進加工設備與恆溫檢測室，確保每件產品皆符合嚴苛的圖面公差要求。</p>
-      
       <div class="grid md:grid-cols-3 gap-8">
-        <!-- 設備 1 -->
         <div class="bg-white rounded-xl overflow-hidden shadow-sm border border-slate-150">
           <img src="images/cnc-turning.jpg" alt="CNC車床加工" class="w-full h-56 object-cover">
           <div class="p-8">
             <h3 class="text-2xl font-bold text-blue-900 mb-4">CNC 車銑複合加工</h3>
-            <p class="text-slate-700 text-base md:text-lg leading-relaxed">
-              擁有多台高精度 CNC 車銑複合機與自動車床，最大加工外徑與長度可依需求彈性調整，一次夾持完成車削、銑削、鑽孔與攻牙等高複雜工序。
-            </p>
+            <p class="text-slate-700 text-base md:text-lg leading-relaxed">擁有多台高精度 CNC 車銑複合機與自動車床，最大加工外徑與長度可依需求彈性調整，一次夾持完成車削、銑削、鑽孔與攻牙等高複雜工序。</p>
           </div>
         </div>
-        <!-- 設備 2 -->
         <div class="bg-white rounded-xl overflow-hidden shadow-sm border border-slate-150">
           <img src="images/cnc-milling.jpg" alt="CNC銑床加工" class="w-full h-56 object-cover">
           <div class="p-8">
             <h3 class="text-2xl font-bold text-blue-900 mb-4">CNC 銑床與多軸加工</h3>
-            <p class="text-slate-700 text-base md:text-lg leading-relaxed">
-              配備高速切削銑床與多軸加工中心，適合各式複雜幾何形狀的零件開發、模具打樣與中批量生產，提供精細的表面處理與尺寸精度。
-            </p>
+            <p class="text-slate-700 text-base md:text-lg leading-relaxed">配備高速切削銑床與多軸加工中心，適合各式複雜幾何形狀的零件開發、模具打樣與中批量生產，提供精細的表面處理與尺寸精度。</p>
           </div>
         </div>
-        <!-- 設備 3 -->
         <div class="bg-white rounded-xl overflow-hidden shadow-sm border border-slate-150">
           <img src="images/cmm-inspection.jpg" alt="精密檢測" class="w-full h-56 object-cover">
           <div class="p-8">
             <h3 class="text-2xl font-bold text-blue-900 mb-4">三次元與精密量測</h3>
-            <p class="text-slate-700 text-base md:text-lg leading-relaxed">
-              設有精密量測室，配備 CMM 三次元量測儀、光學投影機、表面粗度儀與各式校準量具，落實進料檢驗 (IQC)、製程檢驗 (IPQC) 與出貨檢驗 (FQC)。
-            </p>
+            <p class="text-slate-700 text-base md:text-lg leading-relaxed">設有精密量測室，配備 CMM 三次元量測儀、光學投影機、表面粗度儀與各式校準量具，落實進料檢驗 (IQC)、製程檢驗 (IPQC) 與出貨檢驗 (FQC)。</p>
           </div>
         </div>
       </div>
@@ -112,7 +113,6 @@
       <h2 class="text-3xl md:text-4xl font-bold text-slate-950 mb-4">嚴格的製程管理流程</h2>
       <p class="text-slate-600 text-lg max-w-2xl mx-auto">我們以完善的 SOP 流程，為每一位客戶的產品做最嚴密的把關，給予最高的產出品質。</p>
     </div>
-    
     <div class="grid md:grid-cols-4 gap-6 text-center">
       <div class="bg-white p-8 rounded-lg shadow-sm border border-slate-100">
         <div class="w-14 h-14 bg-blue-100 text-blue-700 rounded-full flex items-center justify-center font-bold text-xl mx-auto mb-5">01</div>
@@ -137,14 +137,12 @@
     </div>
   </section>
 
-  <!-- 產品應用領域 (精簡為 6 大領域) -->
+  <!-- 產品應用領域 -->
   <section id="products" class="py-24 bg-slate-900 text-white px-6">
     <div class="max-w-6xl mx-auto">
       <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">產品應用領域</h2>
       <p class="text-slate-400 text-lg text-center mb-16 max-w-2xl mx-auto">累積多年加工經驗，產品廣泛應用於高科技、重工業、醫療與航太等多元化領域。</p>
-      
       <div class="grid md:grid-cols-3 gap-8">
-        <!-- 分類 1 -->
         <div class="bg-slate-800 rounded-xl overflow-hidden hover:scale-[1.02] transition duration-300">
           <img src="images/semiconductor-parts.jpg" alt="半導體與工業周邊" class="w-full h-52 object-cover opacity-90">
           <div class="p-8">
@@ -152,7 +150,6 @@
             <p class="text-slate-300 text-base md:text-lg leading-relaxed">精準加工真空腔體零件、晶圓輸送機械件、法蘭接頭及各種高精密耐化學腐蝕之工業結構件。</p>
           </div>
         </div>
-        <!-- 分類 2 -->
         <div class="bg-slate-800 rounded-xl overflow-hidden hover:scale-[1.02] transition duration-300">
           <img src="images/aerospace-defense.jpg" alt="航太與國防零部件" class="w-full h-52 object-cover opacity-90">
           <div class="p-8">
@@ -160,7 +157,6 @@
             <p class="text-slate-300 text-base md:text-lg leading-relaxed">選用高強度、耐高溫的鈦合金與超合金材料，嚴格依圖加工複雜的航太聯接器與防護組件。</p>
           </div>
         </div>
-        <!-- 分類 3 -->
         <div class="bg-slate-800 rounded-xl overflow-hidden hover:scale-[1.02] transition duration-300">
           <img src="images/automotive-parts.jpg" alt="汽車與車載零部件" class="w-full h-52 object-cover opacity-90">
           <div class="p-8">
@@ -168,7 +164,6 @@
             <p class="text-slate-300 text-base md:text-lg leading-relaxed">車削各類高耐磨轉向與變速器零件、軸件、自控感測器殼體，滿足高壽命、耐疲勞的安全標準。</p>
           </div>
         </div>
-        <!-- 分類 4 -->
         <div class="bg-slate-800 rounded-xl overflow-hidden hover:scale-[1.02] transition duration-300">
           <img src="images/medical-device-parts.jpg" alt="醫療與生技器材零件" class="w-full h-52 object-cover opacity-90">
           <div class="p-8">
@@ -176,7 +171,6 @@
             <p class="text-slate-300 text-base md:text-lg leading-relaxed">微細加工技術處理不銹鋼、鈦合金等生醫級材質，用於手術工具、牙科與骨科植入物部件、檢測器材。</p>
           </div>
         </div>
-        <!-- 分類 5 -->
         <div class="bg-slate-800 rounded-xl overflow-hidden hover:scale-[1.02] transition duration-300">
           <img src="images/telecom-rf.jpg" alt="RF連接器與5G通訊零件" class="w-full h-52 object-cover opacity-90">
           <div class="p-8">
@@ -184,7 +178,6 @@
             <p class="text-slate-300 text-base md:text-lg leading-relaxed">加工高頻、低損耗之射頻 (RF) 連接器零部件、基站通訊組件、同軸適配器，確保極佳導電與訊號傳輸。</p>
           </div>
         </div>
-        <!-- 分類 6 -->
         <div class="bg-slate-800 rounded-xl overflow-hidden hover:scale-[1.02] transition duration-300">
           <img src="images/automation-parts.jpg" alt="工業自動化與各式精密探針" class="w-full h-52 object-cover opacity-90">
           <div class="p-8">
@@ -196,66 +189,34 @@
     </div>
   </section>
 
-  <!-- 聯絡資訊 (含 LINE QR Code 與上元先進聯絡方式) -->
+  <!-- 聯絡資訊 -->
   <footer id="contact" class="bg-slate-950 text-slate-300 py-20 px-6 border-t border-slate-800">
     <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-12">
-      
-      <!-- 欄位 1: 公司資訊 -->
       <div>
         <h3 class="text-xl font-bold text-white mb-5">上元先進股份有限公司</h3>
-        <p class="text-base text-slate-400 mb-4 leading-relaxed">
-          提供一站式 CNC 精密零件車銑複合加工、高品質把關與檢測服務，是您拓展精密製造、提升品質競爭力的最佳合作夥伴。
-        </p>
+        <p class="text-base text-slate-400 mb-4 leading-relaxed">提供一站式 CNC 精密零件車銑複合加工、高品質把關與檢測服務，是您拓展精密製造、提升品質競爭力的最佳合作夥伴。</p>
         <span class="text-sm text-slate-500">統編: 53483238</span>
       </div>
-      
-      <!-- 欄位 2: 聯絡細節 -->
       <div>
         <h3 class="text-xl font-bold text-white mb-5">聯絡我們</h3>
         <ul class="space-y-4 text-base">
-          <li class="flex items-center space-x-3">
-            <span class="text-blue-500 font-semibold">電話:</span>
-            <a href="tel:062316589" class="hover:underline">886-6-2316589</a>
-          </li>
-          <li class="flex items-center space-x-3">
-            <span class="text-blue-500 font-semibold">傳真:</span>
-            <span>886-6-2316758</span>
-          </li>
-          <li class="flex items-start space-x-3">
-            <span class="text-blue-500 font-semibold">地址:</span>
-            <a href="https://maps.app.goo.gl/sUKq6x1FqQy9SvEN7" target="_blank" class="hover:underline text-slate-300">
-              台南市永康區中正二街586號
-            </a>
-          </li>
-          <li class="flex items-center space-x-3">
-            <span class="text-blue-500 font-semibold">信箱:</span>
-            <a href="mailto:benson3238@gmail.com" class="hover:underline">benson3238@gmail.com</a>
-          </li>
+          <li class="flex items-center space-x-3"><span class="text-blue-500 font-semibold">電話:</span><a href="tel:062316589" class="hover:underline">886-6-2316589</a></li>
+          <li class="flex items-center space-x-3"><span class="text-blue-500 font-semibold">傳真:</span><span>886-6-2316758</span></li>
+          <li class="flex items-start space-x-3"><span class="text-blue-500 font-semibold">地址:</span><a href="https://maps.app.goo.gl/sUKq6x1FqQy9SvEN7" target="_blank" class="hover:underline text-slate-300">台南市永康區中正二街586號</a></li>
+          <li class="flex items-center space-x-3"><span class="text-blue-500 font-semibold">信箱:</span><a href="mailto:benson3238@gmail.com" class="hover:underline">benson3238@gmail.com</a></li>
         </ul>
       </div>
-
-      <!-- 欄位 3: LINE QR Code 嵌入 -->
       <div class="flex flex-col md:items-end">
         <h3 class="text-xl font-bold text-white mb-5 md:text-right">歡迎加 LINE 諮詢</h3>
         <div class="bg-white p-3 rounded-lg shadow-md inline-block">
-          <!-- 請確認您已下載 LINE QR Code 並命名為 images/line-qr.png -->
           <img src="images/line-qr.png" alt="上元先進 LINE 諮詢 QR Code" class="w-36 h-36 object-contain">
         </div>
-        <p class="text-sm text-slate-400 mt-3 md:text-right">
-          手機讀者可直接儲存條碼，或至 LINE 掃描。
-        </p>
+        <p class="text-sm text-slate-400 mt-3 md:text-right">手機讀者可直接儲存條碼，或至 LINE 掃描。</p>
       </div>
-
     </div>
-
-    <!-- 底部版權 -->
     <div class="max-w-6xl mx-auto border-t border-slate-800 mt-16 pt-6 flex flex-col md:flex-row justify-between text-sm text-slate-500">
-      <div>
-        © 2026 上元先進股份有限公司 版權所有. All Rights Reserved.
-      </div>
-      <div class="mt-2 md:mt-0">
-        網頁託管於 GitHub Pages | 網域與 DNS 經 Cloudflare 託管
-      </div>
+      <div>© 2026 上元先進股份有限公司 版權所有. All Rights Reserved.</div>
+      <div class="mt-2 md:mt-0">網頁託管於 GitHub Pages | 網域與 DNS 經 Cloudflare 託管</div>
     </div>
   </footer>
 
